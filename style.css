@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@700&display=swap');
+
+/* css variable */
+:root{
+    --dark-violet: hsl(256, 26%, 20%);
+    --grey-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-gray-violet:  hsl(273, 4%, 51%);
+    --very-lighy-gray: hsl(0, 0%, 98%);
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    color: var( --dark-violet);
+    font-family: 'Karla',sans-serif;
+    margin: 0;
+}
+h1,h2,h3{
+    font-family: 'DM Serif Display',sans-serif;
+}
+h1,h2{
+    font-size: 64px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    padding-top: 45px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    opacity: 0.6;
+    line-height: 1.5;
+}
+.line::before{
+    content: '';
+    background-color: var(--dark-violet);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 2px;
+}
+.line-header::before{
+    content: '';
+    background-color:var(--dark-gray-violet);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 2px;
+}
+/* button */
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 15px 25px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.9;
+    display: inline-block;
+}
+.nav-hover:hover{
+    color: black;
+}
+.btn-selected{
+    border-color: var(--dark-violet);
+    color: var(--dark-violet);
+}
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+    padding: 20px;
+}
+.flex{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex > div{
+    flex: 1;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+nav li{
+   margin-left: 30px;
+}
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark-gray-violet);
+}
+/* styling in navigation bar */
+nav{
+    margin: -20px;
+    padding-top: 3px;
+}
+/* styling in header */
+header{
+    background-color: var(--dark-violet);
+    color: white;
+    padding: 50px 0px;
+    margin-bottom: 250px;
+    position: relative;
+}
+.header-image{
+    margin-bottom: -200px;
+    padding-left: 10px;
+   
+}
+.title{
+    margin-top: 75px;
+}
+/* styling in section */
+.section-container{
+    margin: 100px auto;
+    color: white;
+    background-color: var(--dark-violet);
+    max-width: 100%;
+    width: 1200px;
+    position: relative;
+    padding: 70px;
+/*  styling in footer */
+}
+.section-container h2{
+    color: white;
+    font-size: 60px;
+    padding: 0px;
+    width: 60%;
+}
+.btn-section{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 15px 25px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0.9;
+    float: right;
+}
+footer{
+    background-color: var(--very-lighy-gray);
+}
+footer ul{
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    margin-bottom: 10px;
+}
+footer li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark-violet);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 3;
+}
+footer h4{
+    color: var(--dark-gray-violet);
+    opacity: 0.8;
+}
+.flex-footer{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+}
+.underline li :hover{
+    text-decoration: underline;
+}
+.flex-footer > div{
+    flex: 1;
+}
+footer .container{
+    background-color: rgb(252, 248, 248);
+}
+.border-footer{
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+footer ul.flex li{
+    margin-left: 10px;
+}
+a:hover.btn-selected {
+    background-color: var(--very-dark-violet);
+    color: white;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: var(--very-lighy-gray);
+    color: var(--very-dark-violet);
+    transition-duration: 0.4s;
+}
+.btn-section:hover{
+    background-color: var(--very-lighy-gray);
+    color: var(--very-dark-violet);
+    transition-duration: 0.4s;
+}
+.flex-icon:hover{
+    fill: black;
+}
+@media screen and (max-width: 750px){
+    body{
+        text-align: center;
+    }
+    .flex{
+        flex-direction: column;
+    }
+
+    .flex-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
