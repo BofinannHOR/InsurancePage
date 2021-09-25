@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Insure landing page</title>
 
   <link rel="stylesheet" href="style.css" />
+  <script src="style.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -19,13 +20,18 @@
  <!-- btn nav-selected gation bar -->
  <nav>
    <div class="container">
-     <div class="flex">
-       <div>
+     <div class="flex mobile-icon-nav">
+       <div class="nav-logo">
           <!-- "INSURE" logo image (left side) -->
           <img src="./images/logo.svg" alt="logo" />
        </div>
+      <!-- hamburger botton on mobile side -->
+      <button class="icon-nav" id="icon">
+        <img class="enable" src="./images/icon-hamburger.svg" alt="mobile-icon-nav" />
+        <img class="disable" src="./images/icon-close.svg" alt="disable-icon-nav" />
+      </button>
       <!-- btn nav-selectedgation bar -->
-        <ul>
+        <ul id="mobilelist">
           <li><a  class="flex nav-hover" href="#">How we work</a></li>
           <li><a  class="flex nav-hover" href="#">Blog</a></li>
           <li><a  class="flex nav-hover" href="#">Account</a></li>
@@ -38,7 +44,7 @@
 <!-- Header -->
 <header>
   <div class="container">
-    <div class="flex">
+    <div class="flex mobile-header">
       <!-- Left container -->
       <div>
         <h1 class="line-header">
@@ -124,7 +130,7 @@
       </div>
         <!-- 4 right icons -->
 
-        <ul class="flex flex-icon">
+        <ul class="flex">
           <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
           <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
           <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a></li>
