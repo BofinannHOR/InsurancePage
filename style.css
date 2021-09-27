@@ -224,6 +224,7 @@ nav .icon-nav{
 @media screen and (max-width: 768px){
     body{
         text-align: center;
+        overflow-x: hidden;
     }
     .flex{
         flex-direction: column;
@@ -241,7 +242,7 @@ nav .icon-nav{
         margin-bottom: 20px;
     }
     .section-container{
-        margin: 0 20px
+        margin: 0 
     }
     .line-header::before{
         left: 50%;
@@ -258,11 +259,11 @@ nav .icon-nav{
         display: inline-block;
         margin-left:-30px;
         margin-bottom: -10px;
-        max-width: 112%;
-        margin-top: -20px;
+        max-width: calc(110% + 40px);
     }
     header{
         padding-top: 0;
+        margin-top: -20px;
     }
     .btn-selected{
         margin: 5px;
@@ -300,7 +301,7 @@ nav .icon-nav{
     }
     nav ul a{
         color: white;
-        opacity: 0.8;
+        opacity: 0.8                            ;
     }
     nav ul li{
         margin: 30px 0;
